@@ -29,7 +29,7 @@
     <div class="container px-4 px-lg-5">
         <div class="text-center mt-5">
             <h1>KAJIAN PENEMPATAN DALAMAN ("JOB ROTATION") BAGI WARGA KERJA PEJABAT DAERAH DAN TANAH ALOR GAJAH</h1>
-            <p class="lead">Kajian ini dibuat untuk mendapatkan gambaran penempatan tuan/puan selama berkhidmat di jabatan ini. Kajian ini hanya terpakai kepada Pegawai P&P dan juga kumpulan sokongan skim PT(N)/(W) sahaja</p>
+            <p class="lead">Kajian ini dibuat untuk mendapatkan gambaran penempatan tuan/puan selama berkhidmat di jabatan ini. Kajian ini hanya terpakai kepada Pegawai P&P dan juga kumpulan sokongan skim PT(N)/(W) dan PT(PO) sahaja</p>
             <p class="lead">Adalah diingatkan bahawa kajian ini adalah sebagai salah satu usaha untuj mengetahui kemahiran tuan/puan sedia ada sepanjang di dalam perkhidmatan dsn perancangan untuk pusingan kerja di PDTAG.</p>
 
         </div>
@@ -193,7 +193,7 @@
                         </form>
 
                         <form id="frmPenempatan2" style="display: none;">
-
+                            <hr>
                             <div class="mb-3">
                                 <label for="comPenempatan1" class="form-label ">Penempatan Kali Kedua <span class="text-danger">*</span> </label>
                                 <select class="form-select" id="comPenempatan2">
@@ -216,7 +216,7 @@
                                 <input type="text" class="form-control" id="txtTarikhTamat2">
                             </div>
                             <div class="mb-3">
-                                <label for="txtTugas1" class="form-label ">Senarai Tugas Penempatan Kali Pertama <span class="text-danger">*</span> </label>
+                                <label for="txtTugas1" class="form-label ">Senarai Tugas Penempatan Kali Kedua <span class="text-danger">*</span> </label>
                                 <textarea class="form-control" id="txtTugas2" rows="5"></textarea>
                             </div>
 
@@ -236,6 +236,220 @@
                                 </div>
                             </div>
 
+                        </form>
+
+                        <!-- Penempatan Ke 3 -->
+                        <form id="frmPenempatan3" style="display: none;">
+                            <hr>
+                            <div class="mb-3">
+                                <label for="comPenempatan1" class="form-label ">Penempatan Kali Ketiga <span class="text-danger">*</span> </label>
+                                <select class="form-select" id="comPenempatan3">
+                                    <option value="0" selected>Pilihan Jawatan</option>
+                                    <option value="1">BKP</option>
+                                    <option value="2">Masyarakat</option>
+                                    <option value="3">Fizikal</option>
+                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
+                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
+                                    <option value="3">Pendaftaran</option>
+                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat3" class="form-label ">Tarikh Mula <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhMula3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat3" class="form-label ">Tarikh Tamat <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhTamat3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTugas3" class="form-label ">Senarai Tugas Penempatan Kali Ketiga <span class="text-danger">*</span> </label>
+                                <textarea class="form-control" id="txtTugas3" rows="5"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan3" id="chkYa3" value="1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Ya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan3" id="chkTidak3" value="0" checked>
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Penempatan Ke 4 -->
+                        <form id="frmPenempatan4" style="display: none;">
+                            <hr>
+                            <div class="mb-3">
+                                <label for="comPenempatan4" class="form-label ">Penempatan Kali Keempat <span class="text-danger">*</span> </label>
+                                <select class="form-select" id="comPenempatan4">
+                                    <option value="0" selected>Pilihan Jawatan</option>
+                                    <option value="1">BKP</option>
+                                    <option value="2">Masyarakat</option>
+                                    <option value="3">Fizikal</option>
+                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
+                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
+                                    <option value="3">Pendaftaran</option>
+                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat4" class="form-label ">Tarikh Mula <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhMula4">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat4" class="form-label ">Tarikh Tamat <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhTamat4">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTugas4" class="form-label ">Senarai Tugas Penempatan Kali Keempat <span class="text-danger">*</span> </label>
+                                <textarea class="form-control" id="txtTugas4" rows="5"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan4" id="chkYa4" value="1">
+                                    <label class="form-check-label">
+                                        Ya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan4" id="chkTidak4" value="0" checked>
+                                    <label class="form-check-label">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Penempatan Ke 5 -->
+                        <form id="frmPenempatan5" style="display: none;">
+                            <hr>
+                            <div class="mb-3">
+                                <label for="comPenempatan5" class="form-label ">Penempatan Kali Kelima <span class="text-danger">*</span> </label>
+                                <select class="form-select" id="comPenempatan5">
+                                    <option value="0" selected>Pilihan Jawatan</option>
+                                    <option value="1">BKP</option>
+                                    <option value="2">Masyarakat</option>
+                                    <option value="3">Fizikal</option>
+                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
+                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
+                                    <option value="3">Pendaftaran</option>
+                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat5" class="form-label ">Tarikh Mula <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhMula5">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat5" class="form-label ">Tarikh Tamat <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhTamat5">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTugas5" class="form-label ">Senarai Tugas Penempatan Kali Kelima <span class="text-danger">*</span> </label>
+                                <textarea class="form-control" id="txtTugas5" rows="5"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan5" id="chkYa5" value="1">
+                                    <label class="form-check-label">
+                                        Ya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan5" id="chkTidak5" value="0" checked>
+                                    <label class="form-check-label">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Penempatan Ke 6 -->
+                        <form id="frmPenempatan6" style="display: none;">
+                            <hr>
+                            <div class="mb-3">
+                                <label for="comPenempatan6" class="form-label ">Penempatan Kali Keenam <span class="text-danger">*</span> </label>
+                                <select class="form-select" id="comPenempatan6">
+                                    <option value="0" selected>Pilihan Jawatan</option>
+                                    <option value="1">BKP</option>
+                                    <option value="2">Masyarakat</option>
+                                    <option value="3">Fizikal</option>
+                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
+                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
+                                    <option value="3">Pendaftaran</option>
+                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat6" class="form-label ">Tarikh Mula <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhMula6">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat6" class="form-label ">Tarikh Tamat <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhTamat6">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTugas6" class="form-label ">Senarai Tugas Penempatan Kali Keenam <span class="text-danger">*</span> </label>
+                                <textarea class="form-control" id="txtTugas6" rows="5"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan6" id="chkYa6" value="1">
+                                    <label class="form-check-label">
+                                        Ya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="chkPenempatan6" id="chkTidak6" value="0" checked>
+                                    <label class="form-check-label">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Penempatan Ke 7 -->
+                        <form id="frmPenempatan7" style="display: none;">
+                            <hr>
+                            <div class="mb-3">
+                                <label for="comPenempatan1" class="form-label ">Penempatan Kali Ketujuh <span class="text-danger">*</span> </label>
+                                <select class="form-select" id="comPenempatan7">
+                                    <option value="0" selected>Pilihan Jawatan</option>
+                                    <option value="1">BKP</option>
+                                    <option value="2">Masyarakat</option>
+                                    <option value="3">Fizikal</option>
+                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
+                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
+                                    <option value="3">Pendaftaran</option>
+                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat7" class="form-label ">Tarikh Mula <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhMula7">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTarikhTamat7" class="form-label ">Tarikh Tamat <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="txtTarikhTamat7">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTugas7" class="form-label ">Senarai Tugas Penempatan Kali Ketujuh <span class="text-danger">*</span> </label>
+                                <textarea class="form-control" id="txtTugas7" rows="5"></textarea>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -394,6 +608,120 @@
                 }
             });
 
+            $('#txtTarikhMula2').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat2').val();
+                }
+            });
+            $('#txtTarikhTamat2').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula2').val();
+                }
+            });
+
+            $('#txtTarikhMula3').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat3').val();
+                }
+            });
+            $('#txtTarikhTamat3').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula3').val();
+                }
+            });
+
+            $('#txtTarikhMula4').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat4').val();
+                }
+            });
+            $('#txtTarikhTamat4').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula4').val();
+                }
+            });
+
+            $('#txtTarikhMula5').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat5').val();
+                }
+            });
+            $('#txtTarikhTamat5').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula5').val();
+                }
+            });
+
+            $('#txtTarikhMula6').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat6').val();
+                }
+            });
+            $('#txtTarikhTamat6').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula6').val();
+                }
+            });
+
+            $('#txtTarikhMula7').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat7').val();
+                }
+            });
+            $('#txtTarikhTamat7').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula7').val();
+                }
+            });
+
             $("#btnNextBio").on("click", function() {
                 if (seksyen1()) {
                     $("#seksyen1").hide();
@@ -461,21 +789,61 @@
             }
 
             $('#chkYa1').on('click', function() {
-                getChkPenempatan1();
+                getChkPenempatan("chkPenempatan1", "#frmPenempatan2");
             });
 
             $('#chkTidak1').on('click', function() {
-                getChkPenempatan1();
+                getChkPenempatan("chkPenempatan1", "#frmPenempatan2");
             });
 
-            function getChkPenempatan1() {
-                $.each($("input[name='chkPenempatan1']:checked"), function() {
+            $('#chkYa2').on('click', function() {
+                getChkPenempatan("chkPenempatan2", "#frmPenempatan3");
+            });
+
+            $('#chkTidak2').on('click', function() {
+                getChkPenempatan("chkPenempatan2", "#frmPenempatan3");
+            });
+
+            $('#chkYa3').on('click', function() {
+                getChkPenempatan("chkPenempatan3", "#frmPenempatan4");
+            });
+
+            $('#chkTidak3').on('click', function() {
+                getChkPenempatan("chkPenempatan3", "#frmPenempatan4");
+            });
+
+            $('#chkYa4').on('click', function() {
+                getChkPenempatan("chkPenempatan4", "#frmPenempatan5");
+            });
+
+            $('#chkTidak4').on('click', function() {
+                getChkPenempatan("chkPenempatan4", "#frmPenempatan5");
+            });
+
+            $('#chkYa5').on('click', function() {
+                getChkPenempatan("chkPenempatan5", "#frmPenempatan6");
+            });
+
+            $('#chkTidak5').on('click', function() {
+                getChkPenempatan("chkPenempatan5", "#frmPenempatan6");
+            });
+
+            $('#chkYa6').on('click', function() {
+                getChkPenempatan("chkPenempatan6", "#frmPenempatan7");
+            });
+
+            $('#chkTidak6').on('click', function() {
+                getChkPenempatan("chkPenempatan6", "#frmPenempatan7");
+            });
+
+            function getChkPenempatan(input, nextForm) {
+                $.each($("input[name='" + input + "']:checked"), function() {
                     console.log($(this).val());
 
                     if ($(this).val() == 1) {
-                        $('#frmPenempatan2').show();
+                        $(nextForm).show();
                     } else {
-                        $('#frmPenempatan2').hide();
+                        $(nextForm).hide();
                     }
                 });
             }

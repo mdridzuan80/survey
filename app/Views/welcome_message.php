@@ -493,14 +493,6 @@
                             <div class="mb-3">
                                 <label for="comPenempatan1" class="form-label ">Pilihan Pertama <span class="text-danger">*</span> </label>
                                 <select class="form-select" id="comPilih1">
-                                    <option value="0" selected>Pilihan Jawatan</option>
-                                    <option value="1">BKP</option>
-                                    <option value="2">Masyarakat</option>
-                                    <option value="3">Fizikal</option>
-                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
-                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
-                                    <option value="3">Pendaftaran</option>
-                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -513,14 +505,7 @@
                             <div class="mb-3">
                                 <label for="comPenempatan1" class="form-label ">Pilihan Kedua <span class="text-danger">*</span> </label>
                                 <select class="form-select" id="comPilih2">
-                                    <option value="0" selected>Pilihan Jawatan</option>
-                                    <option value="1">BKP</option>
-                                    <option value="2">Masyarakat</option>
-                                    <option value="3">Fizikal</option>
-                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
-                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
-                                    <option value="3">Pendaftaran</option>
-                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -533,14 +518,7 @@
                             <div class="mb-3">
                                 <label for="comPenempatan1" class="form-label ">Pilihan Kedua <span class="text-danger">*</span> </label>
                                 <select class="form-select" id="comPilih3">
-                                    <option value="0" selected>Pilihan Jawatan</option>
-                                    <option value="1">BKP</option>
-                                    <option value="2">Masyarakat</option>
-                                    <option value="3">Fizikal</option>
-                                    <option value="3">Pembangunan & Pelupusan Tanah</option>
-                                    <option value="3">Penguatkuasa/Teknikal & Hasil</option>
-                                    <option value="3">Pendaftaran</option>
-                                    <option value="3">Pejabat Penolong Pegawai Undang-Undang</option>
+
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -847,6 +825,59 @@
                     }
                 });
             }
+
+            var bahagian = [{
+                id: 0,
+                name: "Pilihan Jawatan"
+            }, {
+                id: 1,
+                name: "BKP"
+            }, {
+                id: 2,
+                name: "Masyarakat"
+            }, {
+                id: 3,
+                name: "Fizikal"
+            }, {
+                id: 4,
+                name: "Pembangunan & Pelupusan Tanah"
+            }, {
+                id: 5,
+                name: "Penguatkuasa/Teknikal & Hasil"
+            }, {
+                id: 6,
+                name: "Pendaftaran"
+            }, {
+                id: 7,
+                name: "Pejabat Penolong Pegawai Undang-Undang"
+            }, ];
+
+
+            var dropdown1 = $("#comPilih1");
+            var dropdown2 = $("#comPilih2");
+            var dropdown3 = $("#comPilih3");
+
+            $.each(bahagian, function(index, item) {
+                dropdown1.append($("<option />").val(item.id).text(item.name));
+            });
+
+            dropdown1.on('change', function() {
+                dropdown2.empty();
+                $.each(bahagian.filter(function(item) {
+                    return item.id != dropdown1.val();
+                }), function(index,item) {
+                    dropdown2.append($("<option />").val(item.id).text(item.name));
+                });
+            })
+
+            dropdown2.on('change', function() {
+                dropdown3.empty();
+                $.each(bahagian.filter(function(item) {
+                    return item.id != dropdown1.val() && item.id != dropdown2.val();
+                }), function(index,item) {
+                    dropdown3.append($("<option />").val(item.id).text(item.name));
+                });
+            })
 
         });
     </script>

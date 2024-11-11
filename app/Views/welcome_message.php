@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -370,9 +371,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+
     <script>
         $(document).ready(function() {
+            $('#txtTarikhMula1').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                maxDate: function() {
+                    return $('#txtTarikhTamat1').val();
+                }
+            });
+            $('#txtTarikhTamat1').datepicker({
+                uiLibrary: 'bootstrap5',
+                header: true,
+                modal: true,
+                format: 'dd/mm/yyyy',
+                minDate: function() {
+                    return $('#txtTarikhMula1').val();
+                }
+            });
 
             $("#btnNextBio").on("click", function() {
                 if (seksyen1()) {
